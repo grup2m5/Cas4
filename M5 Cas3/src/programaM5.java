@@ -48,7 +48,7 @@ public class programaM5 {
 	}
 	
 	
-	// Mòdul principal
+	// Mòdul principal 2 vegades
 	public static void main (String Args[]) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int op1=0,op2=0,pos=-1;

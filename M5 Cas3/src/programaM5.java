@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 public class programaM5 {
 	
+	// Mòdul factorial
 	public static int factorial(int base) {
 		int res = 1;
         if (base == 0) {
@@ -16,6 +17,8 @@ public class programaM5 {
         }
 	}
 	
+	
+	// Mòdul potència
 	public static int potencia(int base, int exponent) {
 		int resultat = 1;
 		if(base > 0){

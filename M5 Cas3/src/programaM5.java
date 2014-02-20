@@ -18,7 +18,7 @@ public class programaM5 {
 	}
 	
 	
-	// Mòdul potència
+	// Mòdul potència aa
 	public static int potencia(int base, int exponent) {
 		int resultat = 1;
 		if(base > 0){
@@ -47,6 +47,8 @@ public class programaM5 {
 		return resultat;
 	}
 	
+	
+	// Mòdul principal
 	public static void main (String Args[]) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int op1=0,op2=0,pos=-1;

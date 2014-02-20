@@ -18,7 +18,7 @@ public class programaM5 {
 	}
 	
 	
-	// Mòdul potència
+	// Mòdul potència aa
 	public static int potencia(int base, int exponent) {
 		int resultat = 1;
 		if(base > 0){

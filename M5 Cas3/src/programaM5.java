@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 
 public class programaM5 {
 	
-	// Mòdul factorial per canviar 61
+	// Mòdul factorial per canviar aa
 	public static int factorial(int base) {
 		int res = 1;
         if (base == 0) {

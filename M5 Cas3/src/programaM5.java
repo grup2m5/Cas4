@@ -4,20 +4,6 @@ import java.io.InputStreamReader;
 
 public class programaM5 {
 	
-	// Mòdul factorial per canviar aa
-	public static int calcularFactorial(int base) {
-		int res = 1;
-        if (base == 0) {
-        	return 1;
-        } else {
-			for (int i = base; i >= 1; i--) {
-	            res *= i;
-	        } 
-	        return res;
-        }
-	}
-	
-	
 	// Mòdul potència aa
 	public static int calcularPotencia(int base, int exponent) {
 		int resultat = 1;
@@ -103,7 +89,7 @@ public class programaM5 {
 				if (!correcte){
 					System.out.println(error);
 				} else {
-					System.out.println(calcularFactorial(op1));
+					System.out.println(programaM5factorial.calcularFactorial(op1));
 				}
 			}
 		} else {

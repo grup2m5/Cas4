@@ -1,19 +1,28 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+/**
+ * Podem veure el autor i la versió del <b>programa de M5</b>
+ * @author Grup2
+ * @version 1.0
+ * @docRoot
+ */
 public class programaM5 {
 	
 	private static final String FACTORIAL = "!";
 	private static final String POTENCIA = "^";
-
+/**
+ * Visualitzem els parametres  i les seves exceptions
+ * @param Args
+ * @throws IOException
+ */
 	// Mòdul principal 2 vegades
 	public static void main (String Args[]) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		int op1=0,op2=0,pos=-1;
 		boolean correcte=true;
 		String operacio = in.readLine();
-		
+	
 		while (operacio!=null) {
 		
 		String error = "Error";

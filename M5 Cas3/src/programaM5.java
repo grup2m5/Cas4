@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class programaM5 {
 	
 	// Mòdul factorial per canviar aa
-	public static int calcularFactorial(int base) {
+	public static int factorial(int base) {
 		int res = 1;
         if (base == 0) {
         	return 1;
@@ -19,7 +19,7 @@ public class programaM5 {
 	
 	
 	// Mòdul potència aa
-	public static int calcularPotencia(int base, int exponent) {
+	public static int potencia(int base, int exponent) {
 		int resultat = 1;
 		if(base > 0){
 			if(exponent > 0){
@@ -83,7 +83,7 @@ public class programaM5 {
 				if (!correcte || (op1 == 0 && op2 == 0)){
 					System.out.println("Error");
 				} else {
-					System.out.println(calcularPotencia(op1,op2));
+					System.out.println(potencia(op1,op2));
 				}
 			}
 		} else if (operacio.indexOf("!") >= 0) {
@@ -102,7 +102,7 @@ public class programaM5 {
 				if (!correcte){
 					System.out.println("Error");
 				} else {
-					System.out.println(calcularFactorial(op1));
+					System.out.println(factorial(op1));
 				}
 			}
 		} else {

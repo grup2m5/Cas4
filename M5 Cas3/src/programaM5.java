@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 public class programaM5 {
 	
 	// Mòdul factorial per canviar aa
-	public static int factorial(int base) {
+	public static int calcularFactorial(int base) {
 		int res = 1;
         if (base == 0) {
         	return 1;
@@ -102,7 +102,7 @@ public class programaM5 {
 				if (!correcte){
 					System.out.println("Error");
 				} else {
-					System.out.println(factorial(op1));
+					System.out.println(calcularFactorial(op1));
 				}
 			}
 		} else {

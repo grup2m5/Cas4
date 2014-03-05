@@ -57,10 +57,11 @@ public class programaM5 {
 		
 		while (operacio!=null) {
 		
+		String error = "Error";
 		if (operacio.indexOf("^") >= 0) {
 			pos = operacio.indexOf("^");
 			if (pos==0 || pos==operacio.length()-1) {
-				System.out.println("Error");
+				System.out.println(error);
 			} else {
 				try{
 					op1=Integer.parseInt(operacio.substring(0, pos));
@@ -81,7 +82,7 @@ public class programaM5 {
 				}
 				
 				if (!correcte || (op1 == 0 && op2 == 0)){
-					System.out.println("Error");
+					System.out.println(error);
 				} else {
 					System.out.println(calcularPotencia(op1,op2));
 				}
@@ -89,7 +90,7 @@ public class programaM5 {
 		} else if (operacio.indexOf("!") >= 0) {
 			pos = operacio.indexOf("!");
 			if (pos != operacio.length()-1) {
-				System.out.println("Error");
+				System.out.println(error);
 			} else {
 				try{
 					op1=Integer.parseInt(operacio.substring(0, pos));
@@ -100,13 +101,13 @@ public class programaM5 {
 					correcte = false;
 				}
 				if (!correcte){
-					System.out.println("Error");
+					System.out.println(error);
 				} else {
 					System.out.println(calcularFactorial(op1));
 				}
 			}
 		} else {
-			System.out.println("Error");
+			System.out.println(error);
 		}
 		operacio = in.readLine();
 		op1=op2=0;

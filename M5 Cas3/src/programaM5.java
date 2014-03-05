@@ -19,7 +19,7 @@ public class programaM5 {
 	
 	
 	// Mòdul potència aa
-	public static int potencia(int base, int exponent) {
+	public static int calcularPotencia(int base, int exponent) {
 		int resultat = 1;
 		if(base > 0){
 			if(exponent > 0){
@@ -83,7 +83,7 @@ public class programaM5 {
 				if (!correcte || (op1 == 0 && op2 == 0)){
 					System.out.println("Error");
 				} else {
-					System.out.println(potencia(op1,op2));
+					System.out.println(calcularPotencia(op1,op2));
 				}
 			}
 		} else if (operacio.indexOf("!") >= 0) {

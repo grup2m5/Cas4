@@ -4,6 +4,8 @@ import java.io.InputStreamReader;
 
 public class programaM5 {
 	
+	private static final String POTENCIA = "^";
+
 	// Mòdul principal 2 vegades
 	public static void main (String Args[]) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -14,8 +16,8 @@ public class programaM5 {
 		while (operacio!=null) {
 		
 		String error = "Error";
-		if (operacio.indexOf("^") >= 0) {
-			pos = operacio.indexOf("^");
+		if (operacio.indexOf(POTENCIA) >= 0) {
+			pos = operacio.indexOf(POTENCIA);
 			if (pos==0 || pos==operacio.length()-1) {
 				System.out.println(error);
 			} else {

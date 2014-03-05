@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 public class programaM5 {
 	
+	private static final String FACTORIAL = "!";
 	private static final String POTENCIA = "^";
 
 	// Mòdul principal 2 vegades
@@ -45,8 +46,8 @@ public class programaM5 {
 					System.out.println(programaM5potencia.calcularPotencia(op1,op2));
 				}
 			}
-		} else if (operacio.indexOf("!") >= 0) {
-			pos = operacio.indexOf("!");
+		} else if (operacio.indexOf(FACTORIAL) >= 0) {
+			pos = operacio.indexOf(FACTORIAL);
 			if (pos != operacio.length()-1) {
 				System.out.println(error);
 			} else {
